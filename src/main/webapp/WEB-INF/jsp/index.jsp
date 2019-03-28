@@ -7,8 +7,10 @@
                 href="${pageContext.request.contextPath}/css/style.css"/>
    </head>
    <body>
-      <h1>Welcome</h1>
-      <h2>${message}</h2>
+      <h1>${message}</h1>
+      <a href="/param?name=tthang&role=developer"><h4>Get request with parameter: /param?name=tthang&role=developer</h4></a>
+      <a href="/api/v1/techbaseVN/dev1/auction"><h4>Get variable path: /api/v1/techbaseVN/dev1/auction</h4></a>
+      <a href="/api/v1/techbaseVN/dev1/ticket"><h4>Get variable path: /api/v1/techbaseVN/dev1/ticket</h4></a>
    </body>
    
 </html>

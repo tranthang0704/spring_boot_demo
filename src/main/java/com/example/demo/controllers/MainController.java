@@ -11,11 +11,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
-    @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/", "/boot" }, method = RequestMethod.GET)
     public String index(Model model) {
         String message = "Hello World with Spring Boot & JSP";
         model.addAttribute("message", message);
         return "index";
     }
-
 }
